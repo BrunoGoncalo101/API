@@ -1,0 +1,36 @@
+meu-projeto/
+│
+├── src/
+│   ├── config/            # configurações gerais
+│   │   ├── db.js
+│   │   └── env.js
+│   │
+│   ├── controllers/       # recebe req/res e chama a lógica
+│   │   └── userController.js
+│   │
+│   ├── models/            # acesso a dados / modelos
+│   │   └── userModel.js
+│   │
+│   ├── routes/            # definição das rotas
+│   │   └── userRoutes.js
+│   │
+│   ├── services/          # lógica de negócio
+│   │   └── userService.js
+│   │
+│   ├── middlewares/       # autenticação, erros, validação, etc.
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   │
+│   ├── utils/             # funções auxiliares
+│   │   └── logger.js
+│   │
+│   ├── app.js             # configuração do express
+│   └── server.js          # arranque do servidor
+│
+├── tests/                 # testes
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+
+

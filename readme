@@ -1,0 +1,5 @@
+app.js → configura o Express
+server.js → arranca o servidor
+
+
+npm install ws
