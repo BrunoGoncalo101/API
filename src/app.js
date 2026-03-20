@@ -2,6 +2,7 @@ import express from "express";
 import connectDB from "./config/db.js";
 import swaggerUi from "swagger-ui-express"
 import productRoutes from "./routes/products.js";
+import fileRoutes from "./routes/files.js";
 import notFoundMiddleware from "./middlewares/notFoundMiddleware.js";
 import errorMiddleware from "./middlewares/errorMiddleware.js";
 import cors from "cors";
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 
 // rotas da aplicação
 app.use("/api/v1/products", productRoutes);
+app.use("/api/v1/files", fileRoutes);
 
 // Configuração do Swagger UI
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec))
